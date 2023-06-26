@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js today task</title>
+</head>
+<body>
+    <input type="number"id='num1'>
+    <input type="text"id='num2'>
+    <!-- <input type="text"id='num3'> -->
+    <button onclick="largeNum()">click</button>
+    <div class="result"> 
+    
+    </div>
+    <script>
+          let age=document.getElementById('num1');
+        let mf=document.getElementById('num2');
+        let ms=document.getElementById('num3');
+        let result=document.querySelector('.result');
+
+        function largeNum(){
+                if(mf.value==='female'){
+                    result.innerHTML='ur working in urban area';
+                }
+                else if(mf.value==='male' && age.value > 20 && age.value < 40){
+                    result.innerHTML='ur workikng in anywhere';
+                }    
+                else if(mf.value==='male' && age.value >=40 && age.value < 60){
+                    result.innerHTML='u worked in urbanareas';
+                }
+                else{
+                    result.innerHTML='error';
+                }
+                }
+    </script>
+</body>
+</html>
